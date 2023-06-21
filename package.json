@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "devDependencies": {
         "presetter": "^4.0.0",
+        "presetter-preset-esm": "^4.0.0",
         "presetter-preset-strict": "^4.0.0",
         "semantic-release": "^21.0.5"
     },
