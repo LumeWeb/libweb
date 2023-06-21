@@ -10,7 +10,7 @@
     "_id": "@lumeweb/libweb@0.1.0",
     "scripts": {
         "prepare": "presetter bootstrap",
-        "build": "presetter run build",
+        "build": "run build",
         "semantic-release": "semantic-release"
     },
     "dependencies": {
