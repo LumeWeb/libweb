@@ -1,8 +1,5 @@
 {
-    "preset": [
-        "presetter-preset-esm",
-        "presetter-preset-strict"
-    ],
+    "preset": "presetter-preset-strict",
     "config": {
         "tsconfig": {
             "compilerOptions": {
