@@ -1,6 +1,8 @@
 {
     "name": "@lumeweb/libweb",
     "version": "0.1.0",
+    "main": "lib/index.js",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "gitea@git.lumeweb.com:LumeWeb/libweb.git"
@@ -26,5 +28,8 @@
     },
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "files": [
+        "lib/**"
+    ]
 }
