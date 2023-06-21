@@ -9,4 +9,5 @@ export * from "./stringifyJSON.js";
 export * from "./types.js";
 export * from "./cid.js";
 export * from "./encoding.js";
+export * from "./keys.js";
 export { ed25519, sha512 };
