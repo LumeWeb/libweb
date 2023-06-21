@@ -2,6 +2,7 @@
     "name": "@lumeweb/libweb",
     "version": "0.1.0",
     "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
         "presetter": "^4.0.0",
         "presetter-preset-strict": "^4.0.0",
         "semantic-release": "^21.0.5"
