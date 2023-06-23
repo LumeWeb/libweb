@@ -1,3 +1,11 @@
+# [0.2.0-develop.5](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.4...v0.2.0-develop.5) (2023-06-23)
+
+
+### Bug Fixes
+
+* ensure we are using the export for @noble/hashes utils ([7dd6f9f](https://git.lumeweb.com/LumeWeb/libweb/commit/7dd6f9f0b0524b86e851add7e825b9dd0ac3a7c8))
+* update libportal ([100a9f2](https://git.lumeweb.com/LumeWeb/libweb/commit/100a9f2d6c75370ee909dd4fe6e574b19166d1f2))
+
 # [0.2.0-develop.4](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.3...v0.2.0-develop.4) (2023-06-23)
 
 
