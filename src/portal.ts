@@ -10,7 +10,7 @@ export const DEFAULT_PORTAL_LIST: Portal[] = [
   { id: "lumeweb", url: "https://web3portal.com", name: "web3portal.com" },
 ];
 
-const ACTIVE_PORTALS = new Set<Client>();
+let ACTIVE_PORTALS = new Set<Client>();
 
 type PortalSessionsStore = { [id: string]: string };
 
@@ -19,31 +19,8 @@ export function maybeInitDefaultPortals(): ErrTuple {
     return [null, "activePortalMasterKey not set"];
   }
 
-  let portalSessionsData = window.localStorage.getItem("portals");
-  let portalSessions: PortalSessionsStore = {};
-  if (portalSessions) {
-    portalSessions = JSON.parse(
-      portalSessionsData as string,
-    ) as PortalSessionsStore;
-  }
-
   for (const portal of DEFAULT_PORTAL_LIST) {
-    let jwt: string | null = null;
-
-    if (portalSessions) {
-      if (portal.id in portalSessions) {
-        jwt = portalSessions[portal.id];
-      }
-    }
-
-    const client = new Client({
-      email: generatePortalEmail(portal),
-      portalUrl: portal.url,
-      privateKey: generatePortalKeyPair(portal).privateKey,
-      jwt: jwt as string,
-    });
-
-    ACTIVE_PORTALS.add(client);
+    initPortal(portal);
   }
 
   return [null, null];
@@ -75,4 +52,44 @@ export function generatePortalKeyPair(portal: Portal): KeyPair {
 
 export function getActivePortals(): Set<Client> {
   return ACTIVE_PORTALS;
+}
+
+export function addActivePortal(portal: Client) {
+  ACTIVE_PORTALS.add(portal);
+}
+
+export function initPortal(portal: Portal) {
+  const sessions = getPortalSessions();
+  let jwt: string | null = null;
+  if (sessions) {
+    if (portal.id in sessions) {
+      jwt = sessions[portal.id];
+    }
+  }
+
+  const client = new Client({
+    email: generatePortalEmail(portal),
+    portalUrl: portal.url,
+    privateKey: generatePortalKeyPair(portal).privateKey,
+    jwt: jwt as string,
+  });
+
+  addActivePortal(client);
+}
+export function getPortalSessions() {
+  let portalSessionsData = window.localStorage.getItem("portals");
+  let portalSessions: PortalSessionsStore = {};
+  if (portalSessions) {
+    portalSessions = JSON.parse(
+      portalSessionsData as string,
+    ) as PortalSessionsStore;
+
+    return portalSessions;
+  }
+
+  return undefined;
+}
+
+export function setActivePortals(portals: Client[]) {
+  ACTIVE_PORTALS = new Set<Client>(portals);
 }
