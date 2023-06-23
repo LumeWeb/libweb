@@ -1,3 +1,10 @@
+# [0.2.0-develop.6](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.5...v0.2.0-develop.6) (2023-06-23)
+
+
+### Bug Fixes
+
+* update libportal ([bd4f10a](https://git.lumeweb.com/LumeWeb/libweb/commit/bd4f10ad619b218f801fc5ce31be28adbf97e584))
+
 # [0.2.0-develop.5](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.4...v0.2.0-develop.5) (2023-06-23)
 
 
