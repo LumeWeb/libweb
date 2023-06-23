@@ -20,7 +20,7 @@ export function maybeInitDefaultPortals(): ErrTuple {
   }
 
   for (const portal of DEFAULT_PORTAL_LIST) {
-    initPortal(portal);
+    addActivePortal(initPortal(portal));
   }
 
   return [null, null];
@@ -58,7 +58,7 @@ export function addActivePortal(portal: Client) {
   ACTIVE_PORTALS.add(portal);
 }
 
-export function initPortal(portal: Portal) {
+export function initPortal(portal: Portal): Client {
   const sessions = getPortalSessions();
   let jwt: string | null = null;
   if (sessions) {
@@ -67,14 +67,12 @@ export function initPortal(portal: Portal) {
     }
   }
 
-  const client = new Client({
+  return new Client({
     email: generatePortalEmail(portal),
     portalUrl: portal.url,
     privateKey: generatePortalKeyPair(portal).privateKey,
     jwt: jwt as string,
   });
-
-  addActivePortal(client);
 }
 
 export function getPortalSessions() {
