@@ -71,6 +71,11 @@ interface RequestOverrideResponse {
   body?: Uint8Array;
 }
 
+export interface KeyPair {
+  publicKey: Uint8Array;
+  privateKey: Uint8Array;
+}
+
 export {
   DataFn,
   ErrFn,
