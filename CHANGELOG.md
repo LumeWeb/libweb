@@ -1,3 +1,10 @@
+# [0.2.0-develop.2](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.1...v0.2.0-develop.2) (2023-06-23)
+
+
+### Bug Fixes
+
+* add download to exports ([4f2ec80](https://git.lumeweb.com/LumeWeb/libweb/commit/4f2ec806e1c46b23aaf3269f75a9fe2958e233fc))
+
 # [0.2.0-develop.1](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.1.3...v0.2.0-develop.1) (2023-06-23)
 
 
