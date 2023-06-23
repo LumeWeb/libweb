@@ -1,6 +1,6 @@
 {
     "name": "@lumeweb/libweb",
-    "version": "0.2.0-develop.7",
+    "version": "0.2.0-develop.8",
     "main": "lib/index.js",
     "type": "module",
     "repository": {

@@ -1,3 +1,11 @@
+# [0.2.0-develop.8](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.7...v0.2.0-develop.8) (2023-06-23)
+
+
+### Bug Fixes
+
+* make getActivePortals return an array, not a set ([d8e2046](https://git.lumeweb.com/LumeWeb/libweb/commit/d8e2046ebda8b428cfcd5470d63a9c09a6047819))
+* need to use length, not size ([5db1217](https://git.lumeweb.com/LumeWeb/libweb/commit/5db121774ebf7c4eec4360a299cfb54991091747))
+
 # [0.2.0-develop.7](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.6...v0.2.0-develop.7) (2023-06-23)
 
 
