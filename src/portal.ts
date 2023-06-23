@@ -2,7 +2,7 @@ import { ErrTuple, KeyPair, Portal } from "#types.js";
 import { Client } from "@lumeweb/libportal";
 import { deriveChildKey } from "#keys.js";
 import { ed25519 } from "@noble/curves/ed25519";
-import { bytesToHex } from "@noble/hashes/utils.js";
+import { bytesToHex } from "@noble/hashes/utils";
 
 let activePortalMasterKey;
 
