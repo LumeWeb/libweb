@@ -4,7 +4,8 @@
         "tsconfig": {
             "compilerOptions": {
                 "lib": [
-                    "ES2021"
+                    "ES2021",
+                    "dom"
                 ]
             }
         },
