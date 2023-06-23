@@ -7,7 +7,7 @@ const NO_PORTALS_ERROR = [null, "no active portals"] as ErrTuple;
 export async function downloadObject(cid: string): Promise<ErrTuple> {
   const activePortals = getActivePortals();
 
-  if (!activePortals.size) {
+  if (!activePortals.length) {
     return NO_PORTALS_ERROR;
   }
 
