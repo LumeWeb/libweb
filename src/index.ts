@@ -11,4 +11,5 @@ export * from "./cid.js";
 export * from "./encoding.js";
 export * from "./keys.js";
 export * from "./download.js";
+export * from "./portal.js";
 export { ed25519, sha512 };
