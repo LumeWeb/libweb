@@ -50,8 +50,8 @@ export function generatePortalKeyPair(portal: Portal): KeyPair {
   };
 }
 
-export function getActivePortals(): Set<Client> {
-  return ACTIVE_PORTALS;
+export function getActivePortals(): Client[] {
+  return [...ACTIVE_PORTALS];
 }
 
 export function addActivePortal(portal: Client) {
@@ -76,6 +76,7 @@ export function initPortal(portal: Portal) {
 
   addActivePortal(client);
 }
+
 export function getPortalSessions() {
   let portalSessionsData = window.localStorage.getItem("portals");
   let portalSessions: PortalSessionsStore = {};
