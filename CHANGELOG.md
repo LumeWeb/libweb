@@ -1,3 +1,11 @@
+# [0.2.0-develop.7](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.6...v0.2.0-develop.7) (2023-06-23)
+
+
+### Bug Fixes
+
+* add portal to exports ([8b7f708](https://git.lumeweb.com/LumeWeb/libweb/commit/8b7f7082e3af84d8963ec535804b8816a1a396dc))
+* improve portal api ([ca43e88](https://git.lumeweb.com/LumeWeb/libweb/commit/ca43e883006a58d92eec519925a007c0c82c55c6))
+
 # [0.2.0-develop.6](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.5...v0.2.0-develop.6) (2023-06-23)
 
 
