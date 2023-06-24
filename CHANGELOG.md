@@ -1,3 +1,10 @@
+# [0.2.0-develop.12](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.11...v0.2.0-develop.12) (2023-06-24)
+
+
+### Bug Fixes
+
+* don't skip portal if we fail to register ([530b159](https://git.lumeweb.com/LumeWeb/libweb/commit/530b159c96b5426c7c5c891c8773f6e9afb03685))
+
 # [0.2.0-develop.11](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.10...v0.2.0-develop.11) (2023-06-24)
 
 
