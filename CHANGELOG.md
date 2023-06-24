@@ -1,3 +1,10 @@
+# [0.2.0-develop.9](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.8...v0.2.0-develop.9) (2023-06-23)
+
+
+### Bug Fixes
+
+* refactor initPortal to return the instance ([89d2439](https://git.lumeweb.com/LumeWeb/libweb/commit/89d24393e5ec8c3d0846b00bec2912dd177e34a8))
+
 # [0.2.0-develop.8](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.7...v0.2.0-develop.8) (2023-06-23)
 
 
