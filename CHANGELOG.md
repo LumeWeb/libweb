@@ -1,3 +1,11 @@
+# [0.2.0-develop.13](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.12...v0.2.0-develop.13) (2023-06-24)
+
+
+### Bug Fixes
+
+* update libportal ([6d2311b](https://git.lumeweb.com/LumeWeb/libweb/commit/6d2311b9dab8b04df3e468b5b9f3932b9b18d0c7))
+* update npm-npm-shrinkwrap.json ([0d042f7](https://git.lumeweb.com/LumeWeb/libweb/commit/0d042f78673a61585683cdfc8518daa474da158e))
+
 # [0.2.0-develop.12](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.11...v0.2.0-develop.12) (2023-06-24)
 
 
