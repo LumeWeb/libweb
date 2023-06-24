@@ -8,7 +8,7 @@
             "name": "@lumeweb/libweb",
             "version": "0.2.0-develop.9",
             "dependencies": {
-                "@lumeweb/libportal": "0.2.0-develop.6",
+                "@lumeweb/libportal": "0.2.0-develop.7",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1"
             },
@@ -1789,13 +1789,12 @@
             "peer": true
         },
         "node_modules/@lumeweb/libportal": {
-            "version": "0.2.0-develop.6",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.6.tgz",
-            "integrity": "sha512-ezJIpi2px0Kj7P0GHppicDsS94zx1z1ndcLTLghPBaWVJo1ZRcWRkQmXlyTQ1K2kixTqPjdjQrssuLnuZZUf9g==",
+            "version": "0.2.0-develop.7",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.7.tgz",
+            "integrity": "sha512-2vqi2o9EIOSe9mj0K5jztXspUUojYj06GRmG8MAn5znkU9xZjzlfFum+JVVeW8sASPbjciHnt9gDTyPC3p0Unw==",
             "dependencies": {
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
-                "cross-fetch": "^3.1.6",
                 "detect-node": "^2.1.0",
                 "multiformats": "^11.0.2",
                 "node-fetch": "^3.3.1",
@@ -4454,6 +4453,7 @@
             "resolved": "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz",
             "integrity": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==",
             "dev": true,
+            "peer": true,
             "dependencies": {
                 "ansi-styles": "^4.1.0",
                 "supports-color": "^7.1.0"
@@ -5535,33 +5535,6 @@
                 "yarn": ">=1"
             }
         },
-        "node_modules/cross-fetch": {
-            "version": "3.1.6",
-            "resolved": "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.6.tgz",
-            "integrity": "sha512-riRvo06crlE8HiqOwIpQhxwdOk4fOeR7FVM/wXoxchFEqMNUjvbs3bfo4OTgMEMHzppd4DxFBDbyySj8Cv781g==",
-            "dependencies": {
-                "node-fetch": "^2.6.11"
-            }
-        },
-        "node_modules/cross-fetch/node_modules/node-fetch": {
-            "version": "2.6.11",
-            "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.11.tgz",
-            "integrity": "sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==",
-            "dependencies": {
-                "whatwg-url": "^5.0.0"
-            },
-            "engines": {
-                "node": "4.x || >=6.0.0"
-            },
-            "peerDependencies": {
-                "encoding": "^0.1.0"
-            },
-            "peerDependenciesMeta": {
-                "encoding": {
-                    "optional": true
-                }
-            }
-        },
         "node_modules/cross-spawn": {
             "version": "7.0.3",
             "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz",
@@ -6055,6 +6028,7 @@
             "version": "0.1.13",
             "resolved": "https://registry.npmjs.org/encoding/-/encoding-0.1.13.tgz",
             "integrity": "sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==",
+            "dev": true,
             "optional": true,
             "dependencies": {
                 "iconv-lite": "^0.6.2"
@@ -8141,6 +8115,7 @@
             "version": "0.6.3",
             "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz",
             "integrity": "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==",
+            "dev": true,
             "optional": true,
             "dependencies": {
                 "safer-buffer": ">= 2.1.2 < 3.0.0"
@@ -16608,6 +16583,7 @@
             "version": "2.1.2",
             "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
             "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==",
+            "dev": true,
             "optional": true
         },
         "node_modules/semantic-release": {
@@ -18007,7 +17983,8 @@
             "version": "0.2.0",
             "resolved": "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz",
             "integrity": "sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==",
-            "dev": true
+            "dev": true,
+            "peer": true
         },
         "node_modules/through": {
             "version": "2.3.8",
@@ -18087,7 +18064,8 @@
         "node_modules/tr46": {
             "version": "0.0.3",
             "resolved": "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz",
-            "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="
+            "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==",
+            "dev": true
         },
         "node_modules/traverse": {
             "version": "0.6.7",
@@ -18963,12 +18941,14 @@
         "node_modules/webidl-conversions": {
             "version": "3.0.1",
             "resolved": "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
-            "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ=="
+            "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==",
+            "dev": true
         },
         "node_modules/whatwg-url": {
             "version": "5.0.0",
             "resolved": "https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz",
             "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
+            "dev": true,
             "dependencies": {
                 "tr46": "~0.0.3",
                 "webidl-conversions": "^3.0.0"
@@ -19185,6 +19165,7 @@
             "resolved": "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-4.0.2.tgz",
             "integrity": "sha512-7KxauUdBmSdWnmpaGFg+ppNjKF8uNLry8LyzjauQDOVONfFLNKrKvQOxZ/VuTIcS/gge/YNahf5RIIQWTSarlg==",
             "dev": true,
+            "peer": true,
             "dependencies": {
                 "imurmurhash": "^0.1.4",
                 "signal-exit": "^3.0.7"
