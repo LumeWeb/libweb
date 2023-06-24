@@ -1,3 +1,10 @@
+# [0.2.0-develop.14](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.13...v0.2.0-develop.14) (2023-06-24)
+
+
+### Bug Fixes
+
+* switch to using @lumeweb/community-portals ([ac822fb](https://git.lumeweb.com/LumeWeb/libweb/commit/ac822fb9390cfc863a959dc09269479d73a71b80))
+
 # [0.2.0-develop.13](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.12...v0.2.0-develop.13) (2023-06-24)
 
 
