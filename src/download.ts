@@ -15,9 +15,7 @@ export async function downloadObject(cid: string): Promise<ErrTuple> {
     if (!(await portal.isLoggedIn())) {
       try {
         await portal.register();
-      } catch {
-        continue;
-      }
+      } catch {}
 
       await portal.login();
     }
