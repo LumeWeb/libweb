@@ -3,12 +3,11 @@ import { Client } from "@lumeweb/libportal";
 import { deriveChildKey } from "#keys.js";
 import { ed25519 } from "@noble/curves/ed25519";
 import { bytesToHex } from "@noble/hashes/utils";
+import COMMUNITY_PORTAL_LIST from "@lumeweb/community-portals";
 
 let activePortalMasterKey;
 
-export const DEFAULT_PORTAL_LIST: Portal[] = [
-  { id: "lumeweb", url: "https://web3portal.com", name: "web3portal.com" },
-];
+export const DEFAULT_PORTAL_LIST = COMMUNITY_PORTAL_LIST;
 
 let ACTIVE_PORTALS = new Set<Client>();
 
