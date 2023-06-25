@@ -10,7 +10,7 @@
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.2",
                 "@lumeweb/libportal": "0.2.0-develop.8",
-                "@lumeweb/node-library-preset": "https://git.lumeweb.com/LumeWeb/node-library-preset/archive/v0.1.1-develop.9.tar.gz",
+                "@lumeweb/node-library-preset": "https://git.lumeweb.com/LumeWeb/node-library-preset/archive/v0.1.1-develop.11.tar.gz",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1"
             },
@@ -1844,8 +1844,8 @@
         },
         "node_modules/@lumeweb/node-library-preset": {
             "version": "0.1.0",
-            "resolved": "https://git.lumeweb.com/LumeWeb/node-library-preset/archive/v0.1.1-develop.9.tar.gz",
-            "integrity": "sha512-vEEi7bV+ml4IgktckFfJlQPVmYbLHZG0pAdliA/lVtsW8dPaOIrRNgUQD88YNrB2ljoAskiIqMJjb6Tdmm2dKg==",
+            "resolved": "https://git.lumeweb.com/LumeWeb/node-library-preset/archive/v0.1.1-develop.11.tar.gz",
+            "integrity": "sha512-bf919lV8oQnFiwKxwCRWLluVwbe+gY2CkUImfV/YcO1y5mMRupYWHyDf4byi64fualp9yYg+cziAkW+114GRVA==",
             "dependencies": {
                 "presetter-types": "^4.0.1"
             }
