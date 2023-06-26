@@ -1,4 +1,5 @@
 import { objAsString } from "./objAsString.js";
+import { ErrTuple } from "#types.js";
 
 // addContextToErr is a helper function that standardizes the formatting of
 // adding context to an error.
@@ -14,3 +15,5 @@ function addContextToErr(err: any, context: string): string {
 }
 
 export { addContextToErr };
+
+export const NO_PORTALS_ERROR = [null, "no active portals"] as ErrTuple;
