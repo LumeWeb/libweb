@@ -8,7 +8,7 @@
             "name": "@lumeweb/libweb",
             "version": "0.2.0-develop.17",
             "dependencies": {
-                "@lumeweb/community-portals": "^0.1.0-develop.2",
+                "@lumeweb/community-portals": "^0.1.0-develop.4",
                 "@lumeweb/libportal": "^0.2.0-develop.10",
                 "@lumeweb/node-library-preset": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git",
                 "@noble/curves": "^1.1.0",
@@ -1669,11 +1669,11 @@
             "peer": true
         },
         "node_modules/@lumeweb/community-portals": {
-            "version": "0.1.0-develop.2",
-            "resolved": "https://registry.npmjs.org/@lumeweb/community-portals/-/community-portals-0.1.0-develop.2.tgz",
-            "integrity": "sha512-VbbNh0Jidm5ShYBA2AD9bjl9n1Yvs0ExPlx/+bX+xpv/+WpRLV4QfCBF8pzk4+s+pOEN+0s50biJnBITNBC8JA==",
+            "version": "0.1.0-develop.4",
+            "resolved": "https://registry.npmjs.org/@lumeweb/community-portals/-/community-portals-0.1.0-develop.4.tgz",
+            "integrity": "sha512-3fphM9wKOOQ5KU/VZsOmr+VbMb9ZkXfjp/v3JhJ/m8RT/H1ggo70SrwH2dpRDdr1xWyMFqXlhWGDCyL8k8D7dg==",
             "peerDependencies": {
-                "@lumeweb/libweb": "^0.2.0"
+                "@lumeweb/libweb": "^0.2.0-develop.17"
             }
         },
         "node_modules/@lumeweb/libportal": {
