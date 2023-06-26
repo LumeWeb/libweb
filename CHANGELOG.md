@@ -1,3 +1,10 @@
+# [0.2.0-develop.16](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.15...v0.2.0-develop.16) (2023-06-26)
+
+
+### Features
+
+* add initial upload method ([7126203](https://git.lumeweb.com/LumeWeb/libweb/commit/7126203cd3c97485de422e8759442a04074a8f64))
+
 # [0.2.0-develop.15](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.14...v0.2.0-develop.15) (2023-06-25)
 
 # [0.2.0-develop.14](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.13...v0.2.0-develop.14) (2023-06-24)
