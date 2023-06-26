@@ -75,7 +75,11 @@ export function initPortal(portal: Portal): Client {
 }
 
 export function getPortalSessions() {
-  let portalSessionsData = window.localStorage.getItem("portals");
+  if (typeof globalThis.localStorage === "undefined") {
+    return undefined;
+  }
+
+  let portalSessionsData = globalThis.localStorage.getItem("portals");
   let portalSessions: PortalSessionsStore = {};
   if (portalSessions) {
     portalSessions = JSON.parse(
