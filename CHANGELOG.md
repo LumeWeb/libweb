@@ -1,3 +1,10 @@
+# [0.2.0-develop.19](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.18...v0.2.0-develop.19) (2023-06-26)
+
+
+### Bug Fixes
+
+* switch to using globalThis, and check if we have localStorage (if not, might be node) ([79273d2](https://git.lumeweb.com/LumeWeb/libweb/commit/79273d263b9f65dbe4faf369fa936e8d746d81d2))
+
 # [0.2.0-develop.18](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.17...v0.2.0-develop.18) (2023-06-26)
 
 # [0.2.0-develop.17](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.16...v0.2.0-develop.17) (2023-06-26)
