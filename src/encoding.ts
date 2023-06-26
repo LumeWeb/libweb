@@ -1,5 +1,6 @@
 import { addContextToErr } from "./err.js";
 import { Err } from "./types.js";
+import { bytesToHex } from "@noble/hashes/utils";
 
 const MAX_UINT_64 = 18446744073709551615n;
 
@@ -29,7 +30,7 @@ function b64ToBuf(b64: string): [Uint8Array, Err] {
 // bufToHex takes a Uint8Array as input and returns the hex encoding of those
 // bytes as a string.
 function bufToHex(buf: Uint8Array): string {
-  return [...buf].map((x) => x.toString(16).padStart(2, "0")).join("");
+  return bytesToHex(buf);
 }
 
 // bufToB64 will convert a Uint8Array to a base64 string with URL encoding and
@@ -119,12 +120,4 @@ function hexToBuf(hex: string): [Uint8Array, Err] {
   return [u8, null];
 }
 
-export {
-  b64ToBuf,
-  bufToHex,
-  bufToB64,
-  bufToStr,
-  decodeU64,
-  encodeU64,
-  hexToBuf,
-};
+export { b64ToBuf, bufToB64, bufToStr, decodeU64, encodeU64, hexToBuf };
