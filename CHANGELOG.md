@@ -1,3 +1,10 @@
+# [0.2.0-develop.17](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.16...v0.2.0-develop.17) (2023-06-26)
+
+
+### Features
+
+* re-export most of noble utility functions ([a813ee3](https://git.lumeweb.com/LumeWeb/libweb/commit/a813ee35f359a6f019d53b3bad0d9585dcc0d23e))
+
 # [0.2.0-develop.16](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.15...v0.2.0-develop.16) (2023-06-26)
 
 
