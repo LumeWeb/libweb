@@ -120,4 +120,12 @@ function hexToBuf(hex: string): [Uint8Array, Err] {
   return [u8, null];
 }
 
-export { b64ToBuf, bufToB64, bufToStr, decodeU64, encodeU64, hexToBuf };
+export {
+  b64ToBuf,
+  bufToB64,
+  bufToStr,
+  decodeU64,
+  encodeU64,
+  bufToHex,
+  hexToBuf,
+};
