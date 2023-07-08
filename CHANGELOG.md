@@ -1,3 +1,10 @@
+# [0.2.0-develop.21](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.20...v0.2.0-develop.21) (2023-07-02)
+
+
+### Bug Fixes
+
+* export bufToHex ([0fead1c](https://git.lumeweb.com/LumeWeb/libweb/commit/0fead1c78628a049ff25b69cd586fb3d03b0e29e))
+
 # [0.2.0-develop.20](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.19...v0.2.0-develop.20) (2023-06-29)
 
 # [0.2.0-develop.19](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.18...v0.2.0-develop.19) (2023-06-26)
