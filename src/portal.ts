@@ -13,12 +13,23 @@ let ACTIVE_PORTALS = new Set<Client>();
 
 type PortalSessionsStore = { [id: string]: string };
 
+const PORTAL_ID = Symbol.for("PORTAL_ID");
+const PORTAL_NAME = Symbol.for("PORTAL_NAME");
+
 export function maybeInitDefaultPortals(): ErrTuple {
   if (!activePortalMasterKey) {
     return [null, "activePortalMasterKey not set"];
   }
 
-  for (const portal of DEFAULT_PORTAL_LIST) {
+  let portalsToLoad = DEFAULT_PORTAL_LIST;
+
+  const savedPortals = loadSavedPortals();
+
+  if (savedPortals) {
+    portalsToLoad = savedPortals;
+  }
+
+  for (const portal of portalsToLoad) {
     addActivePortal(initPortal(portal));
   }
 
@@ -66,12 +77,17 @@ export function initPortal(portal: Portal): Client {
     }
   }
 
-  return new Client({
+  const client = new Client({
     email: generatePortalEmail(portal),
     portalUrl: portal.url,
     privateKey: generatePortalKeyPair(portal).privateKey,
     jwt: jwt as string,
   });
+
+  client[PORTAL_ID] = portal.id;
+  client[PORTAL_NAME] = portal.name;
+
+  return client;
 }
 
 export function getPortalSessions() {
@@ -94,4 +110,25 @@ export function getPortalSessions() {
 
 export function setActivePortals(portals: Client[]) {
   ACTIVE_PORTALS = new Set<Client>(portals);
+}
+
+export function savePortals() {
+  const portals = [...ACTIVE_PORTALS.values()].map((item) => {
+    return {
+      id: item[PORTAL_ID],
+      name: item[PORTAL_NAME],
+      url: item.portalUrl,
+    } as Portal;
+  });
+  window.localStorage.setItem("portals", JSON.stringify(portals));
+}
+
+export function loadSavedPortals(): Portal[] | null {
+  let portals = window.localStorage.getItem("portals");
+
+  if (!portals) {
+    return null;
+  }
+
+  return JSON.parse(portals);
 }
