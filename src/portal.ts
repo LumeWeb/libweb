@@ -79,7 +79,7 @@ export function getPortalSessions() {
     return undefined;
   }
 
-  let portalSessionsData = globalThis.localStorage.getItem("portals");
+  let portalSessionsData = globalThis.localStorage.getItem("portal_sessions");
   let portalSessions: PortalSessionsStore = {};
   if (portalSessions) {
     portalSessions = JSON.parse(
