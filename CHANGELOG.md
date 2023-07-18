@@ -1,3 +1,10 @@
+# [0.2.0-develop.26](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.25...v0.2.0-develop.26) (2023-07-18)
+
+
+### Features
+
+* add support for loading and saving portal lists ([4fe84e8](https://git.lumeweb.com/LumeWeb/libweb/commit/4fe84e8ab47d7fadeca685e51182e67f91d4c10f))
+
 # [0.2.0-develop.25](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.24...v0.2.0-develop.25) (2023-07-18)
 
 # [0.2.0-develop.24](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.23...v0.2.0-develop.24) (2023-07-18)
