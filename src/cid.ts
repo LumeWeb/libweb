@@ -32,4 +32,4 @@ export function verifyCid(cid: string): boolean {
   }
 }
 
-export { CID } from "@lumeweb/libportal";
+export type { CID } from "@lumeweb/libportal";
