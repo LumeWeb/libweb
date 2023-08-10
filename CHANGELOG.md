@@ -1,3 +1,10 @@
+# [0.2.0-develop.29](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.28...v0.2.0-develop.29) (2023-08-10)
+
+
+### Bug Fixes
+
+* handle localStorage being undefined ([0ab6cf0](https://git.lumeweb.com/LumeWeb/libweb/commit/0ab6cf0ff095209f0a4d83c4295ecd5558de8a89))
+
 # [0.2.0-develop.28](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.27...v0.2.0-develop.28) (2023-08-10)
 
 # [0.2.0-develop.27](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.26...v0.2.0-develop.27) (2023-07-21)
