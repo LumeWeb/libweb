@@ -1,3 +1,10 @@
+# [0.2.0-develop.27](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.26...v0.2.0-develop.27) (2023-07-21)
+
+
+### Bug Fixes
+
+* change to export type ([7f9990c](https://git.lumeweb.com/LumeWeb/libweb/commit/7f9990c2ea4157f83eb87c7c63555bc81db4732a))
+
 # [0.2.0-develop.26](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.25...v0.2.0-develop.26) (2023-07-18)
 
 
