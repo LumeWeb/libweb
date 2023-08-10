@@ -120,11 +120,17 @@ export function savePortals() {
       url: item.portalUrl,
     } as Portal;
   });
-  window.localStorage.setItem("portals", JSON.stringify(portals));
+  if (typeof globalThis.localStorage !== "undefined") {
+    globalThis.localStorage.setItem("portals", JSON.stringify(portals));
+  }
 }
 
 export function loadSavedPortals(): Portal[] | null {
-  let portals = window.localStorage.getItem("portals");
+  let portals: string | null = null;
+
+  if (typeof globalThis.localStorage !== "undefined") {
+    portals = globalThis.localStorage.getItem("portals");
+  }
 
   if (!portals) {
     return null;
