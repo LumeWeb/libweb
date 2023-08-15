@@ -1,3 +1,10 @@
+# [0.2.0-develop.30](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.29...v0.2.0-develop.30) (2023-08-10)
+
+
+### Features
+
+* add new downloadSmallObject function that only hashes the data and compares it and does not verify it in real time ([747aeb7](https://git.lumeweb.com/LumeWeb/libweb/commit/747aeb7d2e34b702b764eae367f90b062aabc1f3))
+
 # [0.2.0-develop.29](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.28...v0.2.0-develop.29) (2023-08-10)
 
 
