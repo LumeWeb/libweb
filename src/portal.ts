@@ -4,6 +4,7 @@ import { deriveChildKey } from "#keys.js";
 import { ed25519 } from "@noble/curves/ed25519";
 import { bytesToHex } from "@noble/hashes/utils";
 import COMMUNITY_PORTAL_LIST from "@lumeweb/community-portals";
+import { NO_PORTALS_ERROR } from "#err.js";
 
 let activePortalMasterKey;
 
@@ -137,4 +138,22 @@ export function loadSavedPortals(): Portal[] | null {
   }
 
   return JSON.parse(portals);
+}
+
+export async function loginActivePortals() {
+  const activePortals = getActivePortals();
+
+  if (!activePortals.length) {
+    return;
+  }
+
+  for (const portal of activePortals) {
+    if (!(await portal.isLoggedIn())) {
+      try {
+        await portal.register();
+      } catch {}
+
+      await portal.login();
+    }
+  }
 }
