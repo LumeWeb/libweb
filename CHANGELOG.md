@@ -1,3 +1,10 @@
+# [0.2.0-develop.31](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.30...v0.2.0-develop.31) (2023-08-15)
+
+
+### Features
+
+* add loginActivePortals function ([a1b67e7](https://git.lumeweb.com/LumeWeb/libweb/commit/a1b67e71cd51003cae5f51ce927f6f9b6fa46ec6))
+
 # [0.2.0-develop.30](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.29...v0.2.0-develop.30) (2023-08-10)
 
 
