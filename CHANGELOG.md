@@ -1,3 +1,10 @@
+# [0.2.0-develop.32](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.31...v0.2.0-develop.32) (2023-08-20)
+
+
+### Features
+
+* change deriveChildKey to hkdf sha256 and create deriveBlakeChildKey that hashes based on the initial blake3 route used by s5 ([7fefaf0](https://git.lumeweb.com/LumeWeb/libweb/commit/7fefaf0818417f1cc4ae0c9f360e5b08734d68f3))
+
 # [0.2.0-develop.31](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.30...v0.2.0-develop.31) (2023-08-15)
 
 
