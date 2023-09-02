@@ -9,7 +9,7 @@
             "version": "0.2.0-develop.33",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
-                "@lumeweb/libportal": "0.2.0-develop.18",
+                "@lumeweb/libportal": "0.2.0-develop.19",
                 "@lumeweb/node-library-preset": "0.2.7",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
@@ -1677,9 +1677,9 @@
             }
         },
         "node_modules/@lumeweb/libportal": {
-            "version": "0.2.0-develop.18",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.18.tgz",
-            "integrity": "sha512-Mb2GZItLTuedAxE3YfMF4XRvvxNs7/2ejpuNQb413uJFMmI5jPIBINC2h3PosoY5q0iaVYo4Q5siJdok9TW5DA==",
+            "version": "0.2.0-develop.19",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.19.tgz",
+            "integrity": "sha512-0xjfUmwo3Cmn8O2/JNsGx3K6R+unTeTy+DF/s4H1TzIKfuOWS7YqNpwotwUibjzodO6O+UntYQ74HSSxeZoNog==",
             "dependencies": {
                 "@lumeweb/libs5": "^0.1.0-develop.43",
                 "@lumeweb/node-library-preset": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git",
