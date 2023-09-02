@@ -29,7 +29,7 @@ type ErrFn = (errMsg: string) => void;
 // returned, the err should be 'null'. If an error is returned, the data field
 // should generally be empty. Callers are expected to check the error before
 // they access any part of the data field.
-type ErrTuple = [data: any, err: Err];
+type ErrTuple<T = any> = [data: T, err: Err];
 
 // KernelAuthStatus is the structure of a message that gets sent by the kernel
 // containing its auth status. Auth occurs in 5 stages.
