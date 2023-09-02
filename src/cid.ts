@@ -4,15 +4,16 @@ import {
   encodeCid as encodeCidPortal,
 } from "@lumeweb/libportal";
 import { addContextToErr } from "#err.js";
+import type { CID } from "@lumeweb/libportal";
 
-export function encodeCid(hash: Uint8Array, size: bigint): any;
-export function encodeCid(hash: string, size: bigint): any;
+export function encodeCid(hash: Uint8Array, size: bigint): ErrTuple<string>;
+export function encodeCid(hash: string, size: bigint): ErrTuple<string>;
 export function encodeCid(
   hash: any,
   size: bigint,
   type?: number,
   hashType?: number,
-): ErrTuple {
+): ErrTuple<CID> {
   try {
     return [encodeCidPortal(hash, size, type, hashType), null];
   } catch (e) {
@@ -20,7 +21,7 @@ export function encodeCid(
   }
 }
 
-export function decodeCid(cid: string): ErrTuple {
+export function decodeCid(cid: string): ErrTuple<CID> {
   try {
     return [decodeCidPortal(cid), null];
   } catch (e) {
