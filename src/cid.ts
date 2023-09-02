@@ -7,9 +7,14 @@ import { addContextToErr } from "#err.js";
 
 export function encodeCid(hash: Uint8Array, size: bigint): any;
 export function encodeCid(hash: string, size: bigint): any;
-export function encodeCid(hash: any, size: bigint): ErrTuple {
+export function encodeCid(
+  hash: any,
+  size: bigint,
+  type?: number,
+  hashType?: number,
+): ErrTuple {
   try {
-    return [encodeCidPortal(hash, size), null];
+    return [encodeCidPortal(hash, size, type, hashType), null];
   } catch (e) {
     return [null, addContextToErr(e as Error, "failed to encode cid")];
   }
