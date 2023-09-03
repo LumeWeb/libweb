@@ -1,12 +1,12 @@
 {
     "name": "@lumeweb/libweb",
-    "version": "0.2.0-develop.39",
+    "version": "0.2.0-develop.40",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
         "": {
             "name": "@lumeweb/libweb",
-            "version": "0.2.0-develop.39",
+            "version": "0.2.0-develop.40",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
                 "@lumeweb/libportal": "0.2.0-develop.23",
