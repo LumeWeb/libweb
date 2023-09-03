@@ -6,18 +6,31 @@ import {
 import { addContextToErr } from "#err.js";
 import type { CID } from "@lumeweb/libportal";
 
-export function encodeCid(hash: Uint8Array, size: bigint): ErrTuple<string>;
-export function encodeCid(hash: string, size: bigint): ErrTuple<string>;
+export function encodeCid(
+  hash: Uint8Array,
+  size: bigint,
+  type?: number,
+  hashType?: number,
+  raw?: boolean,
+): ErrTuple<string>;
+export function encodeCid(
+  hash: string,
+  size: bigint,
+  type?: number,
+  hashType?: number,
+  raw?: boolean,
+): ErrTuple<string>;
 export function encodeCid(
   hash: any,
   size: bigint,
   type?: number,
   hashType?: number,
-): ErrTuple<CID> {
+  raw: boolean = false,
+): ErrTuple<string> {
   try {
-    return [encodeCidPortal(hash, size, type, hashType), null];
+    return [encodeCidPortal(hash, size, type, hashType, raw), null];
   } catch (e) {
-    return [null, addContextToErr(e as Error, "failed to encode cid")];
+    return ["", addContextToErr(e as Error, "failed to encode cid")];
   }
 }
 
