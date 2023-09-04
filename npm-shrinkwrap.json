@@ -9,7 +9,7 @@
             "version": "0.2.0-develop.49",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
-                "@lumeweb/libportal": "0.2.0-develop.24",
+                "@lumeweb/libportal": "0.2.0-develop.25",
                 "@lumeweb/node-library-preset": "0.2.7",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
@@ -1677,11 +1677,11 @@
             }
         },
         "node_modules/@lumeweb/libportal": {
-            "version": "0.2.0-develop.24",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.24.tgz",
-            "integrity": "sha512-EEsHjgmQOkzpU16mXXB6+O4Xv/4aQ+ApcWaShlCJQnHi4EFxuPDPJP6uIoBPhIcgXMm05ZF1YSs10ognAEXlcw==",
+            "version": "0.2.0-develop.25",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.25.tgz",
+            "integrity": "sha512-PIzKbz6MGtwHSPDVx5NZ6tQN4T/0+9MSirJcCtngNT6V93oS14iQ8PFFp97CnSPIUujfOYn6wYSNWyH2FNBvOw==",
             "dependencies": {
-                "@lumeweb/libs5": "^0.1.0-develop.45",
+                "@lumeweb/libs5": "^0.1.0-develop.47",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
                 "detect-node": "^2.1.0",
@@ -1694,9 +1694,9 @@
             }
         },
         "node_modules/@lumeweb/libs5": {
-            "version": "0.1.0-develop.45",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libs5/-/libs5-0.1.0-develop.45.tgz",
-            "integrity": "sha512-D2q8WhCrus/IWcvOmNE1BLPFCdwUzz0wp4hXzYggIRggui0tOBGKpLgo80ZLnjH9LUqaevAkwi9emJ6DrdDgyg==",
+            "version": "0.1.0-develop.47",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libs5/-/libs5-0.1.0-develop.47.tgz",
+            "integrity": "sha512-pNs/23cDHSxOAphkMfjnk3qQSQr7rXgRQqRj5gWdK/CDU7BxY1pEx25xn5J/lN8bmTbgQcN0DgWq/9b2yTcGGA==",
             "dependencies": {
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
