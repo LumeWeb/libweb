@@ -135,7 +135,7 @@ export function decodeRegistryCid(cid: string | Uint8Array): ErrTuple<CID> {
     return [null, "not a valid registry cid"];
   }
 
-  return [cid, null];
+  return [ret, null];
 }
 
 export type { CID } from "@lumeweb/libportal";
