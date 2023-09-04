@@ -1,3 +1,15 @@
+# [0.2.0-develop.42](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.41...v0.2.0-develop.42) (2023-09-04)
+
+
+### Bug Fixes
+
+* update encodeCid overloads and return types ([7dc8067](https://git.lumeweb.com/LumeWeb/libweb/commit/7dc8067e958bb62efe856cdb234ac0010b6d2896))
+
+
+### Features
+
+* add encodeRegistryCid, encodeRegistryValue, decodeRegistryValue, decodeRegistryCid ([7ce52cb](https://git.lumeweb.com/LumeWeb/libweb/commit/7ce52cbff7e622a9046e6a36d4e664d211043e1e))
+
 # [0.2.0-develop.41](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.40...v0.2.0-develop.41) (2023-09-03)
 
 # [0.2.0-develop.40](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.39...v0.2.0-develop.40) (2023-09-03)
