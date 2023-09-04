@@ -110,13 +110,7 @@ export function encodeRegistryValue(
     }
   }
 
-  const [ret, err] = encodeCid(
-    cid.hash,
-    cid.size,
-    CID_TYPES.RESOLVER,
-    hashType,
-    true,
-  );
+  const [ret, err] = encodeCid(cid.hash, cid.size, cid.type, hashType, true);
 
   if (err) {
     return [new Uint8Array(), err];
