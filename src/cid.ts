@@ -39,7 +39,7 @@ export function encodeCid(
   if (typeof hash !== "string" && !(hash instanceof Uint8Array)) {
     size = hash.size;
     type = type ?? hash.type;
-    hashType = hashType ?? hash.type;
+    hashType = hashType ?? hash.hashType;
     hash = hash.hash;
   }
   try {
