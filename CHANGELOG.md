@@ -1,3 +1,10 @@
+# [0.2.0-develop.43](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.42...v0.2.0-develop.43) (2023-09-04)
+
+
+### Bug Fixes
+
+* if we have a Uint8Array but invalid CID_HASH_TYPES, return error ([07a451c](https://git.lumeweb.com/LumeWeb/libweb/commit/07a451ce5ecff302bef201b5f40e916e4420c278))
+
 # [0.2.0-develop.42](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.41...v0.2.0-develop.42) (2023-09-04)
 
 
