@@ -23,12 +23,25 @@ export function encodeCid(
   raw?: boolean,
 ): ErrTuple<string | Uint8Array>;
 export function encodeCid(
+  hash: CID,
+  size?: bigint,
+  type?: number,
+  hashType?: number,
+  raw?: boolean,
+): ErrTuple<string | Uint8Array>;
+export function encodeCid(
   hash: any,
-  size: bigint,
+  size?: bigint,
   type?: number,
   hashType?: number,
   raw: boolean = false,
 ): ErrTuple<string | Uint8Array> {
+  if (typeof hash !== "string" && !(hash instanceof Uint8Array)) {
+    size = hash.size;
+    type = type ?? hash.type;
+    hashType = hashType ?? hash.type;
+    hash = hash.hash;
+  }
   try {
     return [encodeCidPortal(hash, size, type, hashType, raw), null];
   } catch (e) {
