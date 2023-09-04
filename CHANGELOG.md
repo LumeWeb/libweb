@@ -1,3 +1,10 @@
+# [0.2.0-develop.45](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.44...v0.2.0-develop.45) (2023-09-04)
+
+
+### Bug Fixes
+
+* return ret not cid ([34e418b](https://git.lumeweb.com/LumeWeb/libweb/commit/34e418b47e4e856bac34f6e5e63ae7f31a733aa6))
+
 # [0.2.0-develop.44](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.43...v0.2.0-develop.44) (2023-09-04)
 
 # [0.2.0-develop.43](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.42...v0.2.0-develop.43) (2023-09-04)
