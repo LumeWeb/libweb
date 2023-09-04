@@ -74,6 +74,12 @@ export function encodeRegistryCid(
   hashType = CID_HASH_TYPES.ED25519,
   raw: boolean = false,
 ): ErrTuple<string | Uint8Array> {
+  if (hash instanceof Uint8Array) {
+    if (!Object.values(CID_HASH_TYPES).includes(hash[0])) {
+      return ["", "invalid hash type"];
+    }
+  }
+
   return encodeCid(hash, size, type, hashType, raw);
 }
 
