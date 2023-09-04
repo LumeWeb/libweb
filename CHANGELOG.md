@@ -1,3 +1,10 @@
+# [0.2.0-develop.48](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.47...v0.2.0-develop.48) (2023-09-04)
+
+
+### Bug Fixes
+
+* pass along cid.type, dont force CID_TYPES.RESOLVER ([705590c](https://git.lumeweb.com/LumeWeb/libweb/commit/705590c7c57b18155752acac4bd8cba79bada742))
+
 # [0.2.0-develop.47](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.46...v0.2.0-develop.47) (2023-09-04)
 
 
