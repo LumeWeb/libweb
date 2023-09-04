@@ -1,3 +1,10 @@
+# [0.2.0-develop.46](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.45...v0.2.0-develop.46) (2023-09-04)
+
+
+### Bug Fixes
+
+* if has is a CID, override arguments with the CID properties unless we have an argument set already ([2c56658](https://git.lumeweb.com/LumeWeb/libweb/commit/2c56658a6c06c51e6f079232c35cce05a6ca72c3))
+
 # [0.2.0-develop.45](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.44...v0.2.0-develop.45) (2023-09-04)
 
 
