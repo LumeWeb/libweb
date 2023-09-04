@@ -1,3 +1,5 @@
+# [0.2.0-develop.50](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.49...v0.2.0-develop.50) (2023-09-04)
+
 # [0.2.0-develop.49](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.48...v0.2.0-develop.49) (2023-09-04)
 
 
