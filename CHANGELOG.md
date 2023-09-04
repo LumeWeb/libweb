@@ -1,3 +1,10 @@
+# [0.2.0-develop.47](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.46...v0.2.0-develop.47) (2023-09-04)
+
+
+### Bug Fixes
+
+* encodeRegistryValue needs to use type and hashType ([880a70f](https://git.lumeweb.com/LumeWeb/libweb/commit/880a70f153f5d989cae0385c1111aff37feaf0c5))
+
 # [0.2.0-develop.46](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.45...v0.2.0-develop.46) (2023-09-04)
 
 
