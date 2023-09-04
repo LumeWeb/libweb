@@ -114,7 +114,7 @@ export function encodeRegistryValue(
     cid.hash,
     cid.size,
     CID_TYPES.RESOLVER,
-    CID_HASH_TYPES.BLAKE3,
+    hashType,
     true,
   );
 
@@ -122,10 +122,7 @@ export function encodeRegistryValue(
     return [new Uint8Array(), err];
   }
 
-  return [
-    concatBytes(Uint8Array.from([REGISTRY_TYPES.CID]), ret as Uint8Array),
-    null,
-  ];
+  return [concatBytes(Uint8Array.from([type]), ret as Uint8Array), null];
 }
 
 export function decodeRegistryValue(hash: Uint8Array): ErrTuple<CID> {
