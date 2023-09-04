@@ -1,3 +1,10 @@
+# [0.2.0-develop.49](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.48...v0.2.0-develop.49) (2023-09-04)
+
+
+### Bug Fixes
+
+* use hashType not type ([108ab86](https://git.lumeweb.com/LumeWeb/libweb/commit/108ab86fcc82cd22d394939e00ec8047eaaab901))
+
 # [0.2.0-develop.48](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.47...v0.2.0-develop.48) (2023-09-04)
 
 
