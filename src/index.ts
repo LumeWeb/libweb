@@ -26,9 +26,6 @@ export {
 } from "@noble/curves/abstract/utils";
 export * from "./err.js";
 export * from "./errTracker.js";
-export * from "./objAsString.js";
-export * from "./parse.js";
-export * from "./stringifyJSON.js";
 export * from "./types.js";
 export * from "./cid.js";
 export * from "./encoding.js";
