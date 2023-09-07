@@ -6,8 +6,7 @@ import {
 } from "binconv";
 import { equalBytes } from "@noble/curves/abstract/utils";
 import { blake3 } from "@noble/hashes/blake3";
-
-const NO_PORTALS_ERROR = new Error("no active portals");
+import { NO_PORTALS_ERROR } from "#types.js";
 
 export async function downloadObject(cid: string): Promise<ReadableStream> {
   const activePortals = getActivePortals();

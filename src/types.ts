@@ -3,4 +3,7 @@ interface Portal {
   name: string;
   url: string;
 }
-export { Portal };
+
+const NO_PORTALS_ERROR = new Error("no active portals");
+
+export { Portal, NO_PORTALS_ERROR };

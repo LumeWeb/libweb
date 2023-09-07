@@ -1,6 +1,5 @@
-import { ErrTuple } from "#types.js";
+import { ErrTuple, NO_PORTALS_ERROR } from "#types.js";
 import { getActivePortals } from "#portal.js";
-import { NO_PORTALS_ERROR } from "#err.js";
 
 export async function uploadObject(
   file:
