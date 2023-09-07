@@ -9,8 +9,9 @@
             "version": "0.2.0-develop.49",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
-                "@lumeweb/libportal": "0.2.0-develop.25",
+                "@lumeweb/libportal": "0.2.0-develop.27",
                 "@lumeweb/node-library-preset": "0.2.7",
+                "@noble/ciphers": "^0.3.0",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
                 "binconv": "^0.2.0"
@@ -1677,11 +1678,11 @@
             }
         },
         "node_modules/@lumeweb/libportal": {
-            "version": "0.2.0-develop.25",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.25.tgz",
-            "integrity": "sha512-PIzKbz6MGtwHSPDVx5NZ6tQN4T/0+9MSirJcCtngNT6V93oS14iQ8PFFp97CnSPIUujfOYn6wYSNWyH2FNBvOw==",
+            "version": "0.2.0-develop.27",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.27.tgz",
+            "integrity": "sha512-TvZrvMahlHeSIHr2JtNx+RCVnb6J0pJ2kTyXa7LMfcfp1M4AoVmRP5gk23ebrgK2BEwhCEMhkKK6a6pbTSNWoA==",
             "dependencies": {
-                "@lumeweb/libs5": "^0.1.0-develop.47",
+                "@lumeweb/libs5": "^0.1.0-develop.50",
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
                 "detect-node": "^2.1.0",
@@ -1694,9 +1695,9 @@
             }
         },
         "node_modules/@lumeweb/libs5": {
-            "version": "0.1.0-develop.47",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libs5/-/libs5-0.1.0-develop.47.tgz",
-            "integrity": "sha512-pNs/23cDHSxOAphkMfjnk3qQSQr7rXgRQqRj5gWdK/CDU7BxY1pEx25xn5J/lN8bmTbgQcN0DgWq/9b2yTcGGA==",
+            "version": "0.1.0-develop.50",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libs5/-/libs5-0.1.0-develop.50.tgz",
+            "integrity": "sha512-mPywIV3n7YS5GdJHM0Ge9ODYeaHcdY6WJJMxlIr9OT2SudjCJJ426BynxGWSvJZR0O8u/SPyxNR6g+Uh1iC/1g==",
             "dependencies": {
                 "@noble/curves": "^1.1.0",
                 "@noble/hashes": "^1.3.1",
@@ -1708,9 +1709,9 @@
             }
         },
         "node_modules/@lumeweb/libs5/node_modules/multiformats": {
-            "version": "12.1.0",
-            "resolved": "https://registry.npmjs.org/multiformats/-/multiformats-12.1.0.tgz",
-            "integrity": "sha512-/qTOKKnU8nwcVURjRcS+UN0QYgdS5BPZzY10Aiciu2SqncyCVMGV8KtD83EBFmsuJDsSEmT4sGvzcTkCoMw0sQ==",
+            "version": "12.1.1",
+            "resolved": "https://registry.npmjs.org/multiformats/-/multiformats-12.1.1.tgz",
+            "integrity": "sha512-GBSToTmri2vJYs8wqcZQ8kB21dCaeTOzHTIAlr8J06C1eL6UbzqURXFZ5Fl0EYm9GAFz1IlYY8SxGOs9G9NJRg==",
             "engines": {
                 "node": ">=16.0.0",
                 "npm": ">=7.0.0"
@@ -1754,6 +1755,14 @@
                 "presetter-preset-hybrid": "^4.0.1",
                 "presetter-preset-strict": "^4.0.1",
                 "semantic-release": "^21.0.5"
+            }
+        },
+        "node_modules/@noble/ciphers": {
+            "version": "0.3.0",
+            "resolved": "https://registry.npmjs.org/@noble/ciphers/-/ciphers-0.3.0.tgz",
+            "integrity": "sha512-ldbrnOjmNRwFdXcTM6uXDcxpMIFrbzAWNnpBPp4oTJTFF0XByGD6vf45WrehZGXRQTRVV+Zm8YP+EgEf+e4cWA==",
+            "funding": {
+                "url": "https://paulmillr.com/funding/"
             }
         },
         "node_modules/@noble/curves": {
@@ -18028,9 +18037,9 @@
             }
         },
         "node_modules/ws": {
-            "version": "8.13.0",
-            "resolved": "https://registry.npmjs.org/ws/-/ws-8.13.0.tgz",
-            "integrity": "sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==",
+            "version": "8.14.0",
+            "resolved": "https://registry.npmjs.org/ws/-/ws-8.14.0.tgz",
+            "integrity": "sha512-WR0RJE9Ehsio6U4TuM+LmunEsjQ5ncHlw4sn9ihD6RoJKZrVyH9FWV3dmnwu8B2aNib1OvG2X6adUCyFpQyWcg==",
             "engines": {
                 "node": ">=10.0.0"
             },
