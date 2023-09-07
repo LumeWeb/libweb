@@ -1,5 +1,4 @@
 import { getActivePortals } from "#portal.js";
-import { ErrTuple } from "#types.js";
 import { decodeCid, getVerifiableStream } from "@lumeweb/libportal";
 import {
   readableStreamToUint8Array,
@@ -8,13 +7,13 @@ import {
 import { equalBytes } from "@noble/curves/abstract/utils";
 import { blake3 } from "@noble/hashes/blake3";
 
-const NO_PORTALS_ERROR = [null, "no active portals"] as ErrTuple;
+const NO_PORTALS_ERROR = new Error("no active portals");
 
-export async function downloadObject(cid: string): Promise<ErrTuple> {
+export async function downloadObject(cid: string): Promise<ReadableStream> {
   const activePortals = getActivePortals();
 
   if (!activePortals.length) {
-    return NO_PORTALS_ERROR;
+    throw NO_PORTALS_ERROR;
   }
 
   for (const portal of activePortals) {
@@ -35,20 +34,19 @@ export async function downloadObject(cid: string): Promise<ErrTuple> {
       continue;
     }
 
-    return [
-      await getVerifiableStream(decodeCid(cid).hash, proof, stream),
-      null,
-    ];
+    return await getVerifiableStream(decodeCid(cid).hash, proof, stream);
   }
 
-  return NO_PORTALS_ERROR;
+  throw NO_PORTALS_ERROR;
 }
 
-export async function downloadSmallObject(cid: string): Promise<ErrTuple> {
+export async function downloadSmallObject(
+  cid: string,
+): Promise<ReadableStream<Uint8Array>> {
   const activePortals = getActivePortals();
 
   if (!activePortals.length) {
-    return NO_PORTALS_ERROR;
+    throw NO_PORTALS_ERROR;
   }
 
   for (const portal of activePortals) {
@@ -72,11 +70,11 @@ export async function downloadSmallObject(cid: string): Promise<ErrTuple> {
     const data = await readableStreamToUint8Array(stream);
 
     if (!equalBytes(blake3(data), CID.hash)) {
-      return [null, "cid verification failed"];
+      throw new Error("cid verification failed");
     }
 
-    return [uint8ArrayToReadableStream(data), null];
+    return uint8ArrayToReadableStream(data);
   }
 
-  return NO_PORTALS_ERROR;
+  throw NO_PORTALS_ERROR;
 }
