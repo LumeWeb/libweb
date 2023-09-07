@@ -1,10 +1,9 @@
-import { ErrTuple, KeyPair, Portal } from "#types.js";
+import { KeyPair, Portal } from "#types.js";
 import { Client } from "@lumeweb/libportal";
 import { deriveChildKey } from "#keys.js";
 import { ed25519 } from "@noble/curves/ed25519";
 import { bytesToHex } from "@noble/hashes/utils";
 import COMMUNITY_PORTAL_LIST from "@lumeweb/community-portals";
-import { NO_PORTALS_ERROR } from "#err.js";
 
 let activePortalMasterKey;
 
@@ -17,9 +16,9 @@ type PortalSessionsStore = { [id: string]: string };
 const PORTAL_ID = Symbol.for("PORTAL_ID");
 const PORTAL_NAME = Symbol.for("PORTAL_NAME");
 
-export function maybeInitDefaultPortals(): ErrTuple {
+export function maybeInitDefaultPortals() {
   if (!activePortalMasterKey) {
-    return [null, "activePortalMasterKey not set"];
+    throw new Error("activePortalMasterKey not set");
   }
 
   let portalsToLoad = DEFAULT_PORTAL_LIST;
@@ -33,8 +32,6 @@ export function maybeInitDefaultPortals(): ErrTuple {
   for (const portal of portalsToLoad) {
     addActivePortal(initPortal(portal));
   }
-
-  return [null, null];
 }
 
 export function setActivePortalMasterKey(key: Uint8Array) {

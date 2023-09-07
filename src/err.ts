@@ -15,5 +15,3 @@ function addContextToErr(err: any, context: string): string {
 }
 
 export { addContextToErr };
-
-export const NO_PORTALS_ERROR = [null, "no active portals"] as ErrTuple;
