@@ -1,3 +1,18 @@
+# [0.2.0-develop.51](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.50...v0.2.0-develop.51) (2023-09-08)
+
+
+### Bug Fixes
+
+* move NO_PORTALS_ERROR to types and re-import ([2c6b843](https://git.lumeweb.com/LumeWeb/libweb/commit/2c6b8438e1cf7b72296af90ddb1bdd767bfda231))
+* remove export ([9bc7fda](https://git.lumeweb.com/LumeWeb/libweb/commit/9bc7fda44049e129ade3c28fe92d61a290e2d630))
+* use toRegistryEntry of CID ([841e453](https://git.lumeweb.com/LumeWeb/libweb/commit/841e453a8cbc1ef809e0a2d9eccc64c3ee9aaa4e))
+
+
+### Features
+
+* add deriveBlakeChildKeyInt ([282c431](https://git.lumeweb.com/LumeWeb/libweb/commit/282c43102196426834f81253511ae7083756380f))
+* implement appdb, known as hidden db in s5 ([2894e63](https://git.lumeweb.com/LumeWeb/libweb/commit/2894e63aa46bbc66d1b8cd3c59d85f083fc713f5))
+
 # [0.2.0-develop.50](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.49...v0.2.0-develop.50) (2023-09-04)
 
 # [0.2.0-develop.49](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.48...v0.2.0-develop.49) (2023-09-04)
