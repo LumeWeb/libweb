@@ -27,7 +27,6 @@ export {
   bitMask,
 } from "@noble/curves/abstract/utils";
 export * from "./types.js";
-export * from "./cid.js";
 export * from "./keys.js";
 export * from "./download.js";
 export * from "./upload.js";
