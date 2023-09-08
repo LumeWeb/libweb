@@ -24,8 +24,6 @@ export {
   bitSet,
   bitMask,
 } from "@noble/curves/abstract/utils";
-export * from "./err.js";
-export * from "./errTracker.js";
 export * from "./types.js";
 export * from "./cid.js";
 export * from "./keys.js";
