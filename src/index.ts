@@ -1,6 +1,8 @@
 import { ed25519 } from "@noble/curves/ed25519";
 import { sha512 } from "@noble/hashes/sha512";
 
+import AppDb from "#appDb.js";
+
 export {
   bytesToHex,
   hexToBytes,
@@ -30,4 +32,5 @@ export * from "./keys.js";
 export * from "./download.js";
 export * from "./upload.js";
 export * from "./portal.js";
-export { ed25519, sha512 };
+export * from "./encryption.js";
+export { ed25519, sha512, AppDb };
