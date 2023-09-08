@@ -1,5 +1,5 @@
 import { getActivePortals } from "#portal.js";
-import { decodeCid, getVerifiableStream } from "@lumeweb/libportal";
+import { getVerifiableStream } from "@lumeweb/libportal";
 import {
   readableStreamToUint8Array,
   uint8ArrayToReadableStream,
@@ -7,6 +7,7 @@ import {
 import { equalBytes } from "@noble/curves/abstract/utils";
 import { blake3 } from "@noble/hashes/blake3";
 import { NO_PORTALS_ERROR } from "#types.js";
+import { CID } from "@lumeweb/libs5";
 
 export async function downloadObject(cid: string): Promise<ReadableStream> {
   const activePortals = getActivePortals();
@@ -33,7 +34,11 @@ export async function downloadObject(cid: string): Promise<ReadableStream> {
       continue;
     }
 
-    return await getVerifiableStream(decodeCid(cid).hash, proof, stream);
+    return await getVerifiableStream(
+      CID.decode(cid).hash.hashBytes,
+      proof,
+      stream,
+    );
   }
 
   throw NO_PORTALS_ERROR;
@@ -65,10 +70,9 @@ export async function downloadSmallObject(
       continue;
     }
 
-    const CID = decodeCid(cid);
     const data = await readableStreamToUint8Array(stream);
 
-    if (!equalBytes(blake3(data), CID.hash)) {
+    if (!equalBytes(blake3(data), CID.decode(cid).hash.hashBytes)) {
       throw new Error("cid verification failed");
     }
 
