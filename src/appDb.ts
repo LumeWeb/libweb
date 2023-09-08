@@ -9,7 +9,6 @@ import {
 import { deriveBlakeChildKey, deriveBlakeChildKeyInt } from "#keys.js";
 import { uploadObject } from "#upload.js";
 import { signRegistryEntry } from "@lumeweb/libs5/lib/service/registry.js";
-import { encodeRegistryValue } from "#cid.js";
 import { downloadSmallObject } from "#download.js";
 import { readableStreamToUint8Array } from "binconv";
 import { utf8ToBytes } from "@noble/hashes/utils";
@@ -74,11 +73,10 @@ export default class AppDb {
     const cid = await uploadObject(cipherText);
     const writeKey = deriveBlakeChildKeyInt(pathKey, writeKeyDerivationTweak);
     const keyPair = createKeyPair(writeKey);
-    const registryVal = encodeRegistryValue(cid);
 
     const sre = await signRegistryEntry({
       kp: keyPair,
-      data: registryVal,
+      data: cid.toRegistryEntry(),
       revision,
     });
 
