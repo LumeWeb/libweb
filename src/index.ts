@@ -28,7 +28,6 @@ export * from "./err.js";
 export * from "./errTracker.js";
 export * from "./types.js";
 export * from "./cid.js";
-export * from "./encoding.js";
 export * from "./keys.js";
 export * from "./download.js";
 export * from "./upload.js";
