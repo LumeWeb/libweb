@@ -1,9 +1,10 @@
-import { KeyPair, Portal } from "#types.js";
+import { Portal } from "#types.js";
 import { Client } from "@lumeweb/libportal";
 import { deriveChildKey } from "#keys.js";
-import { ed25519 } from "@noble/curves/ed25519";
 import { bytesToHex } from "@noble/hashes/utils";
 import COMMUNITY_PORTAL_LIST from "@lumeweb/community-portals";
+import { createKeyPair } from "@lumeweb/libs5";
+import type { KeyPairEd25519 } from "@lumeweb/libs5";
 
 let activePortalMasterKey;
 
@@ -46,16 +47,13 @@ export function generatePortalEmail(portal: Portal) {
   return `${userId}@example.com`;
 }
 
-export function generatePortalKeyPair(portal: Portal): KeyPair {
+export function generatePortalKeyPair(portal: Portal): KeyPairEd25519 {
   const privateKey = deriveChildKey(
     activePortalMasterKey,
     `portal-account:${portal.id}`,
   );
 
-  return {
-    privateKey,
-    publicKey: ed25519.getPublicKey(privateKey),
-  };
+  return createKeyPair(privateKey);
 }
 
 export function getActivePortals(): Client[] {
@@ -78,7 +76,7 @@ export function initPortal(portal: Portal): Client {
   const client = new Client({
     email: generatePortalEmail(portal),
     portalUrl: portal.url,
-    privateKey: generatePortalKeyPair(portal).privateKey,
+    privateKey: generatePortalKeyPair(portal).extractBytes(),
     jwt: jwt as string,
   });
 
