@@ -1,5 +1,6 @@
-import { ErrTuple, NO_PORTALS_ERROR } from "#types.js";
+import { NO_PORTALS_ERROR } from "#types.js";
 import { getActivePortals } from "#portal.js";
+import { CID } from "@lumeweb/libs5";
 
 export async function uploadObject(
   file:
@@ -8,11 +9,11 @@ export async function uploadObject(
     | Uint8Array
     | Blob,
   size?: bigint,
-): Promise<ErrTuple> {
+): Promise<CID> {
   const activePortals = getActivePortals();
 
   if (!activePortals.length) {
-    return NO_PORTALS_ERROR;
+    throw NO_PORTALS_ERROR;
   }
 
   for (const portal of activePortals) {
@@ -31,8 +32,8 @@ export async function uploadObject(
       continue;
     }
 
-    return [upload, null];
+    return upload;
   }
 
-  return NO_PORTALS_ERROR;
+  throw NO_PORTALS_ERROR;
 }
