@@ -1,3 +1,10 @@
+# [0.2.0-develop.55](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.54...v0.2.0-develop.55) (2023-09-08)
+
+
+### Bug Fixes
+
+* need to use CID.decode ([ab1ad68](https://git.lumeweb.com/LumeWeb/libweb/commit/ab1ad68fcb7b2d08842a04ed4c411970f93cfbb4))
+
 # [0.2.0-develop.54](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.53...v0.2.0-develop.54) (2023-09-08)
 
 # [0.2.0-develop.53](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.52...v0.2.0-develop.53) (2023-09-08)
