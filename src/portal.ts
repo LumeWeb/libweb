@@ -121,6 +121,24 @@ export function savePortals() {
   }
 }
 
+export function savePortalSessions() {
+  const portalSessions = {};
+
+  for (const portal of ACTIVE_PORTALS) {
+    const jwt = portal.jwt;
+    if (jwt) {
+      portalSessions[portal[PORTAL_ID]] = jwt;
+    }
+  }
+
+  if (typeof globalThis.localStorage !== "undefined") {
+    globalThis.localStorage.setItem(
+      "portal_sessions",
+      JSON.stringify(portalSessions),
+    );
+  }
+}
+
 export function loadSavedPortals(): Portal[] | null {
   let portals: string | null = null;
 
