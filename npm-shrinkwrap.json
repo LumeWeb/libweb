@@ -9,7 +9,7 @@
             "version": "0.2.0-develop.58",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
-                "@lumeweb/libportal": "0.2.0-develop.39",
+                "@lumeweb/libportal": "0.2.0-develop.40",
                 "@lumeweb/node-library-preset": "0.2.7",
                 "@noble/ciphers": "^0.3.0",
                 "@noble/curves": "^1.1.0",
@@ -1678,9 +1678,9 @@
             }
         },
         "node_modules/@lumeweb/libportal": {
-            "version": "0.2.0-develop.39",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.39.tgz",
-            "integrity": "sha512-T7yDdIZ78WAUABVTtE3hb3hl+6cBKzBEnGtkAa7gb9S+2/FPOo9UcmvSucqYi1a/ZB8A8xKBZ9sEja8cKyGYkA==",
+            "version": "0.2.0-develop.40",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libportal/-/libportal-0.2.0-develop.40.tgz",
+            "integrity": "sha512-vtdYK92JFUGR1VxQxwghcb5eTLXx8J4wlnCWNpfbNlSEkABJPzM+V5BAhfIqO1d3M55FUBLpIb+h4nibxflcRA==",
             "dependencies": {
                 "@lumeweb/libs5": "^0.1.0-develop.60",
                 "@noble/curves": "^1.1.0",
