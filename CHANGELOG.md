@@ -1,3 +1,5 @@
+# [0.2.0-develop.61](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.60...v0.2.0-develop.61) (2023-11-17)
+
 # [0.2.0-develop.60](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.59...v0.2.0-develop.60) (2023-10-19)
 
 
