@@ -1,3 +1,10 @@
+# [0.2.0-develop.60](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.59...v0.2.0-develop.60) (2023-10-19)
+
+
+### Features
+
+* add savePortalSessions function ([2bc233c](https://git.lumeweb.com/LumeWeb/libweb/commit/2bc233c6b4a8abf5895014a4b8bc819113d763b5))
+
 # [0.2.0-develop.59](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.58...v0.2.0-develop.59) (2023-09-20)
 
 # [0.2.0-develop.58](https://git.lumeweb.com/LumeWeb/libweb/compare/v0.2.0-develop.57...v0.2.0-develop.58) (2023-09-11)
